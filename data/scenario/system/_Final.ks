@@ -1,0 +1,5 @@
+[preload  storage="./data/bgimage/black.jpg"  ]
+[preload  storage="./data/bgimage/cafe1.webp"  ]
+[preload  storage="./data/bgimage/CupOfTea.webp"  ]
+[preload  storage="./data/bgimage/palata.jpg"  ]
+[return]

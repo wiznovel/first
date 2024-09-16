@@ -1,0 +1,497 @@
+{
+  "Cafe.ks": {
+    "title": "Заголовок для Cafe.ks",
+    "labels": [
+      {
+        "label": "*WithNick",
+        "title": "Название для *WithNick",
+        "display": true
+      },
+      {
+        "label": "*LookAtNick",
+        "title": "Название для *LookAtNick",
+        "display": true
+      },
+      {
+        "label": "*WithMia",
+        "title": "Название для *WithMia",
+        "display": true
+      },
+      {
+        "label": "*ListenMia",
+        "title": "Название для *ListenMia",
+        "display": true
+      },
+      {
+        "label": "*Alone",
+        "title": "Название для *Alone",
+        "display": true
+      },
+      {
+        "label": "*CafeClue",
+        "title": "Название для *CafeClue",
+        "display": true
+      },
+      {
+        "label": "*AfterCafe",
+        "title": "Название для *AfterCafe",
+        "display": true
+      },
+      {
+        "label": "*ListenTV",
+        "title": "Название для *ListenTV",
+        "display": true
+      },
+      {
+        "label": "*ListenTV2",
+        "title": "Название для *ListenTV2",
+        "display": true
+      },
+      {
+        "label": "*Headphones",
+        "title": "Название для *Headphones",
+        "display": true
+      }
+    ]
+  },
+  "Corner.ks": {
+    "title": "Заголовок для Corner.ks",
+    "labels": [
+      {
+        "label": "*Corner_Joeh",
+        "title": "Название для *Corner_Joeh",
+        "display": true
+      },
+      {
+        "label": "*Corner_Mia",
+        "title": "Название для *Corner_Mia",
+        "display": true
+      },
+      {
+        "label": "*AfterCorner",
+        "title": "Название для *AfterCorner",
+        "display": true
+      },
+      {
+        "label": "*CallMia",
+        "title": "Название для *CallMia",
+        "display": true
+      },
+      {
+        "label": "*NotCallMia",
+        "title": "Название для *NotCallMia",
+        "display": true
+      },
+      {
+        "label": "*ClassJoeh",
+        "title": "Название для *ClassJoeh",
+        "display": true
+      },
+      {
+        "label": "*SympathyJoeh",
+        "title": "Название для *SympathyJoeh",
+        "display": true
+      },
+      {
+        "label": "*NoSympathyJoeh",
+        "title": "Название для *NoSympathyJoeh",
+        "display": true
+      },
+      {
+        "label": "*ClassNick",
+        "title": "Название для *ClassNick",
+        "display": true
+      },
+      {
+        "label": "*SympathyNick",
+        "title": "Название для *SympathyNick",
+        "display": true
+      },
+      {
+        "label": "*NoSympathyNick",
+        "title": "Название для *NoSympathyNick",
+        "display": true
+      },
+      {
+        "label": "*EndClasses",
+        "title": "Название для *EndClasses",
+        "display": true
+      },
+      {
+        "label": "*Hospital_Joeh",
+        "title": "Название для *Hospital_Joeh",
+        "display": true
+      },
+      {
+        "label": "*Hospital_Nick",
+        "title": "Название для *Hospital_Nick",
+        "display": true
+      }
+    ]
+  },
+  "Final.ks": {
+    "title": "Заголовок для Final.ks",
+    "labels": [
+      {
+        "label": "*EnoughtClue",
+        "title": "Название для *EnoughtClue",
+        "display": true
+      },
+      {
+        "label": "*HappyNickEnd",
+        "title": "Название для *HappyNickEnd",
+        "display": true
+      },
+      {
+        "label": "*HappyMiaEnd",
+        "title": "Название для *HappyMiaEnd",
+        "display": true
+      },
+      {
+        "label": "*NotEnoughtClue",
+        "title": "Название для *NotEnoughtClue",
+        "display": true
+      },
+      {
+        "label": "*JoehSympathy",
+        "title": "Название для *JoehSympathy",
+        "display": true
+      },
+      {
+        "label": "*DoNotForgiveJoeh",
+        "title": "Название для *DoNotForgiveJoeh",
+        "display": true
+      },
+      {
+        "label": "*ForgiveJoeh",
+        "title": "Название для *ForgiveJoeh",
+        "display": true
+      },
+      {
+        "label": "*JoehNickFail",
+        "title": "Название для *JoehNickFail",
+        "display": true
+      },
+      {
+        "label": "*MiaDeath",
+        "title": "Название для *MiaDeath",
+        "display": true
+      },
+      {
+        "label": "*NoJoehSympathy",
+        "title": "Название для *NoJoehSympathy",
+        "display": true
+      },
+      {
+        "label": "*NickHelp",
+        "title": "Название для *NickHelp",
+        "display": true
+      },
+      {
+        "label": "*MiaHelp",
+        "title": "Название для *MiaHelp",
+        "display": true
+      },
+      {
+        "label": "*WithoutHelp",
+        "title": "Название для *WithoutHelp",
+        "display": true
+      },
+      {
+        "label": "*TheEnd",
+        "title": "Название для *TheEnd",
+        "display": true
+      }
+    ]
+  },
+  "Hospital.ks": {
+    "title": "Заголовок для Hospital.ks",
+    "labels": [
+      {
+        "label": "*HospitalClue",
+        "title": "Название для *HospitalClue",
+        "display": true
+      },
+      {
+        "label": "*Continue",
+        "title": "Название для *Continue",
+        "display": true
+      },
+      {
+        "label": "*WhyAreUHere",
+        "title": "Название для *WhyAreUHere",
+        "display": true
+      },
+      {
+        "label": "*JoehEmpathy",
+        "title": "Название для *JoehEmpathy",
+        "display": true
+      },
+      {
+        "label": "*JoehNoEmpathy",
+        "title": "Название для *JoehNoEmpathy",
+        "display": true
+      },
+      {
+        "label": "*HospWithJoeh",
+        "title": "Название для *HospWithJoeh",
+        "display": true
+      },
+      {
+        "label": "*HospitalWithNick",
+        "title": "Название для *HospitalWithNick",
+        "display": true
+      },
+      {
+        "label": "*Nick_Hug",
+        "title": "Название для *Nick_Hug",
+        "display": true
+      },
+      {
+        "label": "*JoehSeeU",
+        "title": "Название для *JoehSeeU",
+        "display": true
+      },
+      {
+        "label": "*Nick_Home",
+        "title": "Название для *Nick_Home",
+        "display": true
+      },
+      {
+        "label": "*HospitalWithMia",
+        "title": "Название для *HospitalWithMia",
+        "display": true
+      },
+      {
+        "label": "*MiaSympathy3",
+        "title": "Название для *MiaSympathy3",
+        "display": true
+      },
+      {
+        "label": "*Default",
+        "title": "Название для *Default",
+        "display": true
+      },
+      {
+        "label": "*Mia_Care",
+        "title": "Название для *Mia_Care",
+        "display": true
+      },
+      {
+        "label": "*MiaSympathy5",
+        "title": "Название для *MiaSympathy5",
+        "display": true
+      },
+      {
+        "label": "*Mia_Smile",
+        "title": "Название для *Mia_Smile",
+        "display": true
+      },
+      {
+        "label": "*Mia_Hug",
+        "title": "Название для *Mia_Hug",
+        "display": true
+      },
+      {
+        "label": "*Mia_Anger",
+        "title": "Название для *Mia_Anger",
+        "display": true
+      },
+      {
+        "label": "*Mia_Safe",
+        "title": "Название для *Mia_Safe",
+        "display": true
+      },
+      {
+        "label": "*Mia_Buyer",
+        "title": "Название для *Mia_Buyer",
+        "display": true
+      },
+      {
+        "label": "*IsItJoeh",
+        "title": "Название для *IsItJoeh",
+        "display": true
+      },
+      {
+        "label": "*WhoIsIt",
+        "title": "Название для *WhoIsIt",
+        "display": true
+      },
+      {
+        "label": "*AfterHospital",
+        "title": "Название для *AfterHospital",
+        "display": true
+      }
+    ]
+  },
+  "Project.ks": {
+    "title": "Заголовок для Project.ks",
+    "labels": [
+      {
+        "label": "*Project_Joeh",
+        "title": "Название для *Project_Joeh",
+        "display": true
+      },
+      {
+        "label": "*PlayWithJoeh_Yes",
+        "title": "Название для *PlayWithJoeh_Yes",
+        "display": true
+      },
+      {
+        "label": "*ClueBySympathy",
+        "title": "Название для *ClueBySympathy",
+        "display": true
+      },
+      {
+        "label": "*AfterJoeh",
+        "title": "Название для *AfterJoeh",
+        "display": true
+      },
+      {
+        "label": "*PlayWithJoeh_No",
+        "title": "Название для *PlayWithJoeh_No",
+        "display": true
+      },
+      {
+        "label": "*Project_Nick",
+        "title": "Название для *Project_Nick",
+        "display": true
+      },
+      {
+        "label": "*NickSorry",
+        "title": "Название для *NickSorry",
+        "display": true
+      },
+      {
+        "label": "*NickNotSorry",
+        "title": "Название для *NickNotSorry",
+        "display": true
+      },
+      {
+        "label": "*AfterSorry",
+        "title": "Название для *AfterSorry",
+        "display": true
+      },
+      {
+        "label": "*SympathyNick",
+        "title": "Название для *SympathyNick",
+        "display": true
+      },
+      {
+        "label": "*NoSympathyNick",
+        "title": "Название для *NoSympathyNick",
+        "display": true
+      },
+      {
+        "label": "*RejectCafeWithNick",
+        "title": "Название для *RejectCafeWithNick",
+        "display": true
+      },
+      {
+        "label": "*CafeWithNick",
+        "title": "Название для *CafeWithNick",
+        "display": true
+      },
+      {
+        "label": "*Project_Mia",
+        "title": "Название для *Project_Mia",
+        "display": true
+      },
+      {
+        "label": "*KnowMia_No",
+        "title": "Название для *KnowMia_No",
+        "display": true
+      },
+      {
+        "label": "*KnowMia_Yes",
+        "title": "Название для *KnowMia_Yes",
+        "display": true
+      },
+      {
+        "label": "*RejectCafeWithMia",
+        "title": "Название для *RejectCafeWithMia",
+        "display": true
+      },
+      {
+        "label": "*CafeWithMia",
+        "title": "Название для *CafeWithMia",
+        "display": true
+      }
+    ]
+  },
+  "scene1.ks": {
+    "title": "Заголовок для scene1.ks",
+    "labels": [
+      {
+        "label": "*First_impresion_Joeh",
+        "title": "Название для *First_impresion_Joeh",
+        "display": true
+      },
+      {
+        "label": "*First_impresion_Clue",
+        "title": "Название для *First_impresion_Clue",
+        "display": true
+      },
+      {
+        "label": "*BackpackScene",
+        "title": "Название для *BackpackScene",
+        "display": true
+      },
+      {
+        "label": "*Backpack",
+        "title": "Название для *Backpack",
+        "display": true
+      },
+      {
+        "label": "*Backpack_Clue",
+        "title": "Название для *Backpack_Clue",
+        "display": true
+      },
+      {
+        "label": "*Backpack_Joeh",
+        "title": "Название для *Backpack_Joeh",
+        "display": true
+      },
+      {
+        "label": "*Coridor",
+        "title": "Название для *Coridor",
+        "display": true
+      },
+      {
+        "label": "*Coridor_Nick",
+        "title": "Название для *Coridor_Nick",
+        "display": true
+      },
+      {
+        "label": "*NotHelpNick",
+        "title": "Название для *NotHelpNick",
+        "display": true
+      },
+      {
+        "label": "*HelpNick_In",
+        "title": "Название для *HelpNick_In",
+        "display": true
+      },
+      {
+        "label": "*HelpNick_Out",
+        "title": "Название для *HelpNick_Out",
+        "display": true
+      },
+      {
+        "label": "*Coridor_Mia",
+        "title": "Название для *Coridor_Mia",
+        "display": true
+      },
+      {
+        "label": "*List_Return",
+        "title": "Название для *List_Return",
+        "display": true
+      },
+      {
+        "label": "*List_Read",
+        "title": "Название для *List_Read",
+        "display": true
+      }
+    ]
+  }
+}
