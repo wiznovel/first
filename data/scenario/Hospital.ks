@@ -1,9 +1,5 @@
 [_tb_system_call storage=system/_Hospital.ks]
 
-[uiVariable  uiNameDiv="_var"  color="0x000000"  fontColor="0xffffff"  fontSize="22"  uiNameVar="f.Clue"  uiName="Дедукция"  x="590"  y="80"  left="590"  top="80"  width=""  height=""  ]
-[uiVariable  uiNameDiv="_varJ"  color="0x000000"  fontColor="0xe9f50a"  fontSize="22"  uiNameVar="f.Joeh"  uiName="Джо"  x="450"  y="10"  left="450"  top="10"  width=""  height=""  ]
-[uiVariable  uiNameDiv="_varN"  color="0x000000"  fontColor="0x3de6f5"  fontSize="22"  uiNameVar="f.Nick"  x="590"  y="10"  left="590"  top="10"  width=""  height=""  uiName="Ник"  ]
-[uiVariable  uiNameDiv="_varM"  color="0x000000"  fontColor="0x3cf536"  fontSize="22"  uiNameVar="f.Mia"  x="739"  y="10"  left="739"  top="10"  width=""  height=""  uiName="Мия"  ]
 [tb_hide_message_window  ]
 [chara_hide_all  time="1000"  wait="true"  ]
 [cm  ]
@@ -227,7 +223,7 @@
 С трудом подбирая слова, я...
 [_tb_end_text]
 
-[jump  storage="Hospital.ks"  target="*MiaSympathy3"  cond="f.Mia>3"  ]
+[jump  storage="Hospital.ks"  target="*MiaSympathy3"  cond="f.Mia>2"  ]
 [jump  storage="Hospital.ks"  target="*Default"  ]
 *MiaSympathy3
 
@@ -358,7 +354,7 @@
 
 [_tb_end_text]
 
-[jump  storage="Hospital.ks"  target="*IsItJoeh"  cond="f.Clue>5"  ]
+[jump  storage="Hospital.ks"  target="*IsItJoeh"  cond="f.Clue>6"  ]
 [jump  storage="Hospital.ks"  target="*WhoIsIt"  ]
 *IsItJoeh
 

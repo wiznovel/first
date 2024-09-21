@@ -1,7 +1,7 @@
 ;=========Information about the preset character 
 ;Криста
 [chara_new  name="Криста"  jname="Криста"  storage="chara/1/Krista_.png"  ]
-[fuki_chara  left="200"  top="270"  sippo="top"  sippo_left="30"  sippo_top="40"  sippo_width="12"  sippo_height="20"  select_fix_width="false"  max_width="300"  color="0xFFFFFF"  opacity="255"  border_size="3"  border_color="0x000000"  radius="15"  font_color="0x000000"  font_size="28"  bgImage=""  name="Криста"  ]
+[fuki_chara  left="200"  top="270"  sippo="top"  sippo_left="30"  sippo_top="40"  sippo_width="12"  sippo_height="20"  select_fix_width="false"  max_width="300"  color="0xFFFFFF"  opacity="255"  border_size="3"  border_color="0x000000"  radius="15"  font_color="0x000000"  font_size="28"  bgImage=""  name="Криста"  posTextTop="100"  posTextLeft="100"  text_width="100"  bubble_height="100"  bubble_width="100"  bubble_rotate="0"  ]
 ;Joeh
 [chara_new  name="Joeh"  jname="Joeh"  storage="chara/2/Joeh_.png"  ]
 ;Nick

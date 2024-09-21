@@ -3,10 +3,6 @@
 [cm  ]
 [chara_hide_all  time="1000"  wait="true"  ]
 [bg  time="1000"  method="crossfade"  storage="rouka.jpg"  ]
-[uiVariable  uiNameDiv="_var"  color="0x000000"  fontColor="0xffffff"  fontSize="22"  uiNameVar="f.Clue"  uiName="Дедукция"  x="590"  y="80"  left="590"  top="80"  width=""  height=""  ]
-[uiVariable  uiNameDiv="_varJ"  color="0x000000"  fontColor="0xe9f50a"  fontSize="22"  uiNameVar="f.Joeh"  uiName="Джо"  x="450"  y="10"  left="450"  top="10"  width=""  height=""  ]
-[uiVariable  uiNameDiv="_varN"  color="0x000000"  fontColor="0x3de6f5"  fontSize="22"  uiNameVar="f.Nick"  x="590"  y="10"  left="590"  top="10"  width=""  height=""  uiName="Ник"  ]
-[uiVariable  uiNameDiv="_varM"  color="0x000000"  fontColor="0x3cf536"  fontSize="22"  uiNameVar="f.Mia"  x="739"  y="10"  left="739"  top="10"  width=""  height=""  uiName="Мия"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
@@ -324,7 +320,7 @@
 Задумавшись ненадолго, я ответила:
 [_tb_end_text]
 
-[glink  color="btn_22_lime"  storage="Project.ks"  size="20"  text="Давай!"  x="500"  y="320"  width="300"  height=""  _clickable_img=""  target="*CafeWithMia"  glink_sm="true"  ]
+[glink  color="btn_22_lime"  storage="Project.ks"  size="20"  text="Давай!"  x="500"  y="320"  width="300"  height="25"  _clickable_img=""  target="*CafeWithMia"  glink_sm="true"  ]
 [glink  color="btn_22_white"  storage="Project.ks"  size="20"  text="Может&nbsp;в&nbsp;другой&nbsp;раз..."  x="500"  y="412"  width="300"  height="25"  _clickable_img=""  target="*RejectCafeWithMia"  glink_sm="true"  ]
 [s  ]
 *RejectCafeWithMia

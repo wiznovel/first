@@ -39,10 +39,10 @@
 ;configThumbnailQuality=middle
 ;configSaveSlotNum=10
 ;configSaveOverwrite=false
-;maxBackLogNum=50
+;maxBackLogNum=0
 ;autoRecordLabel=false
 ;unReadTextSkip=false
-;alreadyReadTextColor=0x87cefa
+;alreadyReadTextColor=0x096beb
 ;numCharacterLayers=3
 ;scPositionX.left=160
 ;scPositionX.left_center=240

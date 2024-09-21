@@ -3,383 +3,356 @@
 [mask time=10]
 [mask_off time=10]
 [cm  ]
-[tb_eval  exp="f.Clue=2"  name="Clue"  cmd="="  op="t"  val="2"  val_2="undefined"  ]
-[uiVariable  uiNameDiv="_var"  color="0x000000"  fontColor="0xffffff"  fontSize="22"  uiNameVar="f.Clue"  uiName="Дедукция"  x="590"  y="80"  left="590"  top="80"  width=""  height=""  ]
-[uiVariable  uiNameDiv="_varJ"  color="0x000000"  fontColor="0xe9f50a"  fontSize="22"  uiNameVar="f.Joeh"  uiName="Джо"  x="450"  y="10"  left="450"  top="10"  width=""  height=""  ]
-[uiVariable  uiNameDiv="_varN"  color="0x000000"  fontColor="0x3de6f5"  fontSize="22"  uiNameVar="f.Nick"  x="590"  y="10"  left="590"  top="10"  width=""  height=""  uiName="Ник"  ]
-[uiVariable  uiNameDiv="_varM"  color="0x000000"  fontColor="0x3cf536"  fontSize="22"  uiNameVar="f.Mia"  x="739"  y="10"  left="739"  top="10"  width=""  height=""  uiName="Мия"  ]
 [chara_hide_all  time="1000"  wait="true"  ]
-[bg  time="1000"  method="fadeIn"  storage="black.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="rouka.jpg"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-Вспомнив всё произошедшее: всё, что я видела и слышала, всё, чему стала свидетелем, я поняла...[p]
-[_tb_end_text]
-
-[if  exp="f.Clue"  comparisonOperation=">"  value="5"  ]
-[tb_start_text mode=1 ]
-... что у меня есть все доказательства вины Джо.[p]
-[_tb_end_text]
-
-[tb_ptext_show  x="410"  y="350"  size="30"  color="0xffffff"  time="1000"  face="Georgia"  name="Sherlock"  text="Достижение:&nbsp;Шерлок&nbsp;Холмс."  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="380"  y="380"  size="30"  color="0xffffff"  time="1000"  text="Вы&nbsp;нашли&nbsp;достаточно&nbsp;улик&nbsp;против&nbsp;Джо"  anim="false"  face="Georgia"  edge="undefined"  shadow="undefined"  name="EnoughtClue"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[tb_start_text mode=1 ]
-На следующий день я прямо с утра отправилась в полицейский участок, чтобы написать заявление.[p]
-Все мои показания были проверены, и вскоре Джо был арестован за торговлю ZИ.[p]
-А значит, все мои друзья, одноклассники и другие учащиеся Винстер Хай отныне были в безопасности.[p]
-[_tb_end_text]
-
-[if  exp="f.Nick"  comparisonOperation=">"  value="5"  ]
-[chara_show  name="Nick"  time="1000"  wait="true"  storage="chara/5/Nick_full.png"  width="418"  height="585"  left="400"  top="150"  reflect="false"  ]
-[tb_start_text mode=1 ]
-А ещё через несколько дней, отчаяно смущаясь и краснея, Ник предложил мне встречаться. Я была совсем не против.[p]
-[_tb_end_text]
-
-[tb_ptext_show  x="389.99998474121094"  y="339.99999237060547"  size="30"  color="0xffffff"  time="1000"  name="WithNick"  text="Достижение:&nbsp;отношения&nbsp;с&nbsp;Ником"  face="Georgia"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="270.00001525878906"  y="389.99999237060547"  size="30"  color="0xffffff"  time="1000"  text="Вы&nbsp;набрали&nbsp;достаточно&nbsp;баллов&nbsp;отношений&nbsp;с&nbsp;Ником"  anim="false"  face="Georgia"  edge="undefined"  shadow="undefined"  name="NickPoints"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[endif  ]
-[if  exp="f.Mia"  comparisonOperation=">"  value="5"  ]
-[chara_show  name="Mia"  time="1000"  wait="true"  storage="chara/6/Mia_.png"  width="367"  height="589"  left="400"  top="150"  reflect="true"  ]
-[tb_start_text mode=1 ]
-Мы с Мией стали настоящими подругами.[p]
-[_tb_end_text]
-
-[tb_ptext_show  x="410"  y="350"  size="30"  color="0xffffff"  time="1000"  name="WithMia"  text="Достижение:&nbsp;дружба&nbsp;с&nbsp;Мией"  face="Georgia"  ]
-[tb_ptext_show  x="309.99998474121094"  y="379.99999237060547"  size="30"  color="0xffffff"  time="1000"  text="Вы&nbsp;набрали&nbsp;достаточно&nbsp;баллов&nbsp;отношений&nbsp;с&nbsp;Мией"  anim="false"  face="Georgia"  edge="undefined"  shadow="undefined"  name="MiaPoints"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[endif  ]
-[jump  storage="Final.ks"  target="*TheEnd"  ]
-[else  ]
-[tb_start_text mode=1 ]
-... что всё ещё не могу сложить фрагменты в единую картину.[p]
-
-[_tb_end_text]
-
-[tb_ptext_show  x="410"  y="350"  size="30"  color="0xffffff"  time="1000"  face="Georgia"  name="NotSherlock"  text="Достижение:&nbsp;Не&nbsp;Шерлок&nbsp;Холмс."  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="380"  y="380"  size="30"  color="0xffffff"  time="1000"  name="NotEnoughtClue"  text="Вы&nbsp;не&nbsp;нашли&nbsp;достаточно&nbsp;улик&nbsp;против&nbsp;Джо"  face="Georgia"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[tb_start_text mode=1 ]
-Я позвонила Джо и попросила его встретиться завтра в кафе, чтобы обсудить кое-что очень важное.[p]
-[_tb_end_text]
-
-[bg  time="1000"  method="crossfade"  storage="cafe1.webp"  ]
-[chara_show  name="Криста"  time="1000"  wait="true"  left="899"  top="159"  width="426"  height="691"  reflect="false"  ]
-[chara_show  name="Joeh"  time="1000"  wait="true"  storage="chara/2/Joeh_.png"  width="370"  height="587"  left="0"  top="150"  reflect="false"  ]
-[tb_start_text mode=1 ]
-В условленное время Джо уже ждал меня за столиком с двумя чашками чая.[p]
-#Джо:
-Держи, я взял тебе с бергамотом.[p]
 #
-Он подтолкнул ко мне одну из чашек[p]
-#Джо:
-О чём ты хотела поговорить?[p]
+В тот день нам задали очередной школьный проект, который следовало подготовить в паре.[p]
+#
+
 [_tb_end_text]
 
+[tb_start_text mode=4 ]
+Своим напарником я выбрала...
+[_tb_end_text]
+
+[chara_show  name="Joeh"  time="1000"  wait="true"  left="0"  top="150"  width="368"  height="593"  reflect="false"  storage="chara/2/Joeh_.png"  ]
+[chara_show  name="Nick"  time="1000"  wait="true"  left="449"  top="150"  width="413"  height="587"  reflect="false"  storage="chara/5/Nick_full.png"  ]
+[chara_show  name="Mia"  time="1000"  wait="true"  left="920"  top="130"  width="366"  height="595"  reflect="false"  storage="chara/6/Mia_.png"  ]
+[glink  color="btn_22_purple"  storage="Project.ks"  size="20"  text="Джо"  target="*Project_Joeh"  glink_sm="true"  x="120"  y="550"  width="100"  height="25"  _clickable_img=""  ]
+[glink  color="btn_22_blue"  storage="Project.ks"  size="20"  text="Ника"  target="*Project_Nick"  glink_sm="true"  x="560"  y="550"  width="100"  height="25"  _clickable_img=""  ]
+[glink  color="btn_22_lime"  storage="Project.ks"  size="20"  text="Мию"  target="*Project_Mia"  glink_sm="true"  x="980"  y="550"  width="100"  height="25"  _clickable_img=""  ]
+[s  ]
+*Project_Joeh
+
+[tb_eval  exp="f.Joeh+=1"  name="Joeh"  cmd="+="  op="t"  val="1"  ]
+[tb_hide_message_window  ]
+[chara_hide_all  time="1000"  wait="true"  ]
+[bg  time="1000"  method="crossfade"  storage="Room_Joeh.webp"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
-Я опустила взгляд в чашку, не зная, как построить разговор.[p]
+Джо пригласил меня зайти к нему после школы. [p]
+#
+[_tb_end_text]
+
+[chara_show  name="Joeh"  time="1000"  wait="true"  storage="chara/2/Joeh_.png"  width="368"  height="594"  left="0"  top="140"  reflect="false"  ]
+[chara_show  name="Криста"  time="1000"  wait="true"  storage="chara/1/Krista_.png"  width="465"  height="754"  left="899"  top="140"  reflect="false"  ]
+[tb_eval  exp="f.Clue+=1"  name="Clue"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_start_text mode=1 ]
+В гостиной и в комнате Джо я невольно отметила большое количество дорогой техники: огромный телевизор, игровая приставка, современный ноутбук.[p]
+При этом мебель была достаточно простенькой, а ремонт уже далеко не новым.[p]
+Мы провели пару часов за сбором и систематизацией данных и решили закончить на сегодня. [p]
+Я уже начала собирать вещи в рюкзак, как Джо повернулся ко мне с улыбкой.[p]
+#Джо:
+Не хочешь сыграть в приставку? У меня есть классные игры, тебе понравятся.[p]
+Если боишься поздно возвращаться, я могу тебя потом подвезти домой.[p]
+#
+[_tb_end_text]
+
+[tb_start_text mode=4 ]
+Немного подумав, я...
+[_tb_end_text]
+
+[glink  color="btn_22_purple"  storage="Project.ks"  size="20"  text="Согласилась"  target="*PlayWithJoeh_Yes"  x="500"  y="320"  width="200"  height="25"  _clickable_img=""  glink_sm="true"  ]
+[glink  color="btn_22_white"  storage="Project.ks"  size="20"  text="Отказалась"  target="*PlayWithJoeh_No"  x="500"  y="365"  width="200"  height="25"  _clickable_img=""  glink_sm="true"  ]
+[s  ]
+*PlayWithJoeh_Yes
+
+[tb_eval  exp="f.Joeh+=1"  name="Joeh"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_start_text mode=1 ]
+У меня дома не было своей приставки, и мне было жутко любопытно, что это за зверь такой.[p]
+Джо дал мне джойстик, объяснил, как им пользоваться, и запустил игрушку со смешными пластилиновыми человечками.[p]
+Мы пили колу, болтали, хохотали... так увлеклись, что остаток вечера пролетел незаметно. [p]
+#
+[_tb_end_text]
+
+[jump  storage="Project.ks"  target="*ClueBySympathy"  cond="f.Joeh>2"  ]
+[jump  storage="Project.ks"  target="*AfterJoeh"  ]
+*ClueBySympathy
+
+[tb_eval  exp="f.Clue+=1"  name="Clue"  cmd="+="  op="t"  val="1"  ]
+[tb_start_text mode=1 ]
+Уже уходя, я радостно отметила:[p]
 #Криста:
-Вся эта ситуация с Мией, отравлением, больницей...[p]
-Прости, но мне кажется, ты как-то замешан в этом.[p]
-#
-Джо нахмурился, но не казался удивлённым.[p]
+А эта приставка - классная штука! Тебе родители подарили?[p]
 #Джо:
-Даже если и так, то что?[p]
+Неа, я тут нашёл неплохую подработку. Платят прилично, вот и решил себя побаловать.[p]
 #
-Я в шоке округлила глаза.[p]
-#Криста:
-Как это "что"? Так же нельзя![p]
-#
-[_tb_end_text]
-
-[if  exp="f.Joeh"  comparisonOperation=">"  value="5"  ]
-[tb_start_text mode=1 ]
-Постаравшись взять себя в руки, я обратилась к Джо спокойным размеренным голосом:[p]
-#Криста:
-Джо, я понимаю: бывают разные ситуации в жизни. Но я уверена, что всё можно решить разными путями. [p]
-Я считаю тебя своим другом и готова помочь тебе, чем смогу. [p]
-Поделись со мной, и мы вместе что-нибудь придумаем.[p]
 
 [_tb_end_text]
 
-[if  exp="f.JNFail"  comparisonOperation="!="  value="1"  ]
+*AfterJoeh
+
+[chara_hide_all  time="1000"  wait="true"  ]
+[bg  time="1000"  method="crossfade"  storage="black.jpg"  ]
 [tb_start_text mode=1 ]
+Джо, как и обещал, подбросил меня до дома. [p]
+Мама нахмурилась моему позднему возвращению, но ругать не стала:[p]
+на следующий день была суббота, а значит не нужно вставать рано в школу.[p]
+[_tb_end_text]
+
+[jump  storage="Cafe.ks"  target=""  ]
+*PlayWithJoeh_No
+
+[tb_start_text mode=1 ]
+Я покачала головой и вежливо улыбнулась:[p]
+#Криста:
+Спасибо за предложение, может быть в другой раз...[p]
+#Джо:
+Ну ладно, тогда пока! Увидимся в понедельник в школе![p]
 #
-Джо тяжело вздохнул и, глядя мне в глаза, признался:[p]
-#Джо:
-Мне очень нужны деньги, Криста.[p]
-Моя мать тяжело больна и зарплаты отца едва хватает на её лекарства. [p]
-Один мой знакомый поообещал мне хороший заработок, и я не смог отказаться.[p]
-Зи — это совсем лёгкий наркотик:  чтобы он реально навредил, его нужно принимать очень долго или в очень большой дозировке. [p]
-Я не идиот, я слежу за этим: большой одной порции в руки не продаю, да и берут нечасто — перед сложными контрольными или для экзаменов. Эту штука, говорят, неплохо прочищает мозги и снимает стресс.[p]
+
+[_tb_end_text]
+
+[chara_hide_all  time="1000"  wait="true"  ]
+[bg  time="1000"  method="crossfade"  storage="Room2.webp"  ]
+[tb_start_text mode=1 ]
+Вернувшись домой, я радостно плюхнулась на кровать и открыла недочитанную книжку.[p]
+Завтра была суббота, а значит можно было лечь позднее, не боясь не выспаться перед школой.[p]
+[_tb_end_text]
+
+[jump  storage="Cafe.ks"  target=""  ]
+*Project_Nick
+
+[tb_eval  exp="f.Nick+=1"  name="Nick"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_hide_message_window  ]
+[chara_hide_all  time="1000"  wait="true"  ]
+[bg  time="1000"  method="crossfade"  storage="Room1.webp"  ]
+[chara_show  name="Криста"  time="1000"  wait="true"  storage="chara/1/Krista_.png"  width="425"  height="692"  left="899"  top="130"  reflect="false"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
+Мы договорились встретиться после занятий у меня дома, но Ник задерживался. [p]
+Я начала сама понемногу искать материалы для проекта, как наконец услышала дверной звонок.[p]
+#
+[_tb_end_text]
+
+[chara_show  name="Nick"  time="1000"  wait="true"  left="0"  top="150"  width="367"  height="592"  reflect="false"  storage="chara/5/Nick_.png"  ]
+[tb_eval  exp="f.Clue+=1"  name="Clue"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_start_text mode=1 ]
+#Ник:
+Прости, пожалуйста, за опоздание...[p]
+Я был у Джо, играл в приставку. Ты бы знала, сколько у него офигенных игр![p]
+Даже NightMight 6 есть, а ведь она вышла всего пару месяцев назад![p]
+#
+[_tb_end_text]
+
+[tb_start_text mode=4 ]
+Укоризненно посмотрев на Ника, я...
+[_tb_end_text]
+
+[glink  color="btn_22_blue"  storage="Project.ks"  size="20"  text="Приняла&nbsp;извинения"  x="530"  y="310"  width="300"  height="25"  _clickable_img=""  target="*NickSorry"  glink_sm="true"  ]
+[glink  color="btn_22_red"  storage="Project.ks"  size="20"  text="Отругала&nbsp;за&nbsp;опоздание"  x="530"  y="422"  width="300"  height="25"  _clickable_img=""  target="*NickNotSorry"  glink_sm="true"  ]
+[s  ]
+*NickSorry
+
+[tb_eval  exp="f.Nick+=1"  name="Nick"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_start_text mode=1 ]
 #Криста:
-Ты сам не пробовал?[p]
-#Джо:
-Нет, конечно! У меня нет лишних денег, чтобы брать товар у самого себя. [p]
-#Криста:
-А как же Мия? Ты говоришь, что зи не вредит, но Мия оказалась в больнице из-за него.[p]
-#Джо:
-Я не знаю, может партия попалась бракованная или ещё что... Не проверяю же я каждую![p]
+Так и быть, ты прощён.[p]
+Но если ещё раз вместо проекта будешь играть в игрушки, не видать тебе моих конспектов, как своих ушей![p]
+#
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
+Ник состроил забавную мордашку, будто жутко испугался моей угрозы.[p]
+Я рассмеялась, и мы начали совместную работу.[p]
 #
-То, что рассказывал Джо было ужасно. Но я правда считала его своим другом.[p]
-И я обещала помочь.[p]
-#Криста:
-Джо, послушай меня...[p]
-Пожалуйста, прекрати это. Мия поправится, но что, если в следующий раз всё закончится... иначе? Ты даже не знаешь, что за гадость на самом деле ты продаешь. Что если кто-то серьёзно пострадает? [p]
-#
-Я замолчала. Джо тоже не знал, что сказать.[p]
-#Криста:
-Пожалуйста, Джо... Пообещай мне, что перестанешь. Скажешь этому своему знакомому, что больше не хочешь заниматься такими вещами.[p]
-Я никому не расскажу ничего из того, что ты рассказал мне сейчас.[p]
-А мы что-нибудь придумаем, найдём деньги.[p]
-#
-Джо долго молчал, глядя в чашку чая. [p]
-Наконец, кивнул.[p]
-#Джо:
-Спасибо. За понимание, за поддержку.[p]
-Я верю тебе. Верю, что ты не сдашь меня и верю, что поможешь.[p]
-Ты мой друг, и мы вместе что-нибудь придумаем.[p]
 [_tb_end_text]
 
-[tb_ptext_show  x="410"  y="350"  size="30"  color="0xffffff"  time="1000"  face="Georgia"  name="JoehFriendship"  text="Достижение:&nbsp;Дружба&nbsp;побеждает&nbsp;всё"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="59.99998474121094"  y="429.99999237060547"  size="30"  color="0xffffff"  time="1000"  name="JoehFriendshipWin"  text="Благодаря&nbsp;хорошим&nbsp;отношениям&nbsp;с&nbsp;Джо&nbsp;Вы&nbsp;уговорили&nbsp;его&nbsp;бросить&nbsp;торговлю&nbsp;ZИ"  face="Georgia"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[else  ]
+[jump  storage="Project.ks"  target="*AfterSorry"  ]
+*NickNotSorry
+
 [tb_start_text mode=1 ]
+#Криста:
+Серьёзно? Мы договорились на точное время, Ник. Ты не умеешь смотреть на часы?[p]
 #
-Джо зло усмехнулся.[p]
-#Джо:
-Разве я - твой друг? А мне казалось: тот ботан, с которым ты обнималась вчера в больнице.[p]
+Махнув рукой на его расстроенную физиономию, я придвинула ему толстенный фолиант из библиотеки.[p]
+#Криста:
+Давай начинать работу, мы и так задержались.[p]
+#
 [_tb_end_text]
 
-[tb_ptext_show  x="410"  y="350"  size="30"  color="0xffffff"  time="1000"  face="Georgia"  name="CriticalFail"  text="Достижение:&nbsp;Обманутая&nbsp;дружба"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="320.00001525878906"  y="429.99999237060547"  size="30"  color="0xffffff"  time="1000"  name="JoehNickFail"  text="Джо&nbsp;считал&nbsp;Вас&nbsp;другом,&nbsp;а&nbsp;Вы&nbsp;обняли&nbsp;другого"  face="Georgia"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
+*AfterSorry
+
 [tb_start_text mode=1 ]
-#Джо:
-Иди к чёрту, Криста. [p]
-Ты ничего не знаешь и ничего не докажешь. [p]
+Пара часов прошла в сосредоточенной работе. [p]
+Наконец, я довольно откинулась на спинку стула, разминая уставшие пальцы. [p]
+#
+[_tb_end_text]
+
+[jump  storage="Project.ks"  target="*SympathyNick"  cond="f.Nick>2"  ]
+[jump  storage="Project.ks"  target="*NoSympathyNick"  ]
+*SympathyNick
+
+[tb_start_text mode=1 ]
+Ник аккуратно cложил книги и тетради в рюкзак и уже собрался уходить, как вдруг повернулся ко мне и непривычно-смущённым голосом спросил.[p]
+#Ник:
+Слушай, Криста... не хочешь завтра... сходить в кафе?[p]
+#
+[_tb_end_text]
+
+[tb_start_text mode=1 ]
+Я немного растерялась, но всё же ответила...[p]
+[_tb_end_text]
+
+[glink  color="btn_22_blue"  storage="Project.ks"  size="20"  text="Да,&nbsp;давай"  target="*CafeWithNick"  x="552"  y="312"  width="250"  height="25"  _clickable_img=""  glink_sm="true"  ]
+[glink  color="btn_22_white"  storage="Project.ks"  size="20"  text="Извини,&nbsp;другие&nbsp;планы"  target="*RejectCafeWithNick"  x="552"  y="352"  width="250"  height="25"  _clickable_img=""  glink_sm="true"  ]
+[s  ]
+*NoSympathyNick
+
+[tb_start_text mode=1 ]
+Ник аккуратно собрал книги и тетради и, попрощавшись, ушёл.[p]
+А я довольно плюхнулась на кровать и открыла недочитанную книжку.[p]
+Завтра суббота, а значит можно было лечь позднее, не боясь не выспаться перед школой.[p]
+#
+[_tb_end_text]
+
+[tb_hide_message_window  ]
+[jump  storage="Cafe.ks"  target=""  ]
+*RejectCafeWithNick
+
+[tb_start_text mode=1 ]
+Ник разом поник.[p]
+#Ник:
+Оу... Ладно, я понимаю, планы...[p]
+Тогда... увидимся в школе в понедельник?[p]
+#Криста:
+Ага, увидимся, пока![p]
+#
+Проводив Ника до двери, я вернулась в комнату, довольно плюхнулась на кровать и открыла недочитанную книжку.[p]
+Завтра суббота, а значит можно было лечь позднее, не боясь не выспаться перед школой.[p]
+#
+[_tb_end_text]
+
+[tb_hide_message_window  ]
+[jump  storage="Cafe.ks"  target=""  ]
+*CafeWithNick
+
+[tb_eval  exp="f.Nick+=1"  name="Nick"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.Nick_Cafe=1"  name="Nick_Cafe"  cmd="="  op="t"  val="1"  val_2="undefined"  ]
+[tb_start_text mode=1 ]
+Ник просиял.[p]
+#Ник:
+Здорово! Тогда... я заеду часа в три?[p]
+Не опоздаю, честное слово![p]
+#
+Я улыбнулась в ответ.[p]
+#Криста:
+Ловлю на слове! Значит завтра в три. Увидимся, пока![p]
+#
+Проводив Ника до двери, я вернулась в комнату, довольно плюхнулась на кровать и открыла недочитанную книжку.[p]
+Завтра суббота, а значит можно было лечь позднее, не боясь не выспаться перед школой.[p]
+#
+[_tb_end_text]
+
+[tb_hide_message_window  ]
+[jump  storage="Cafe.ks"  target=""  ]
+*Project_Mia
+
+[tb_eval  exp="f.Mia+=1"  name="Mia"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_hide_message_window  ]
+[chara_hide_all  time="1000"  wait="true"  ]
+[bg  time="1000"  method="crossfade"  storage="Room_Mia.webp"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
+Мия предложила заниматься проектом у неё дома. [p]
+И после занятий, захватив несколько книг в библиотеке, мы вместе отправились к ней.[p]
+#
+[_tb_end_text]
+
+[chara_show  name="Mia"  time="1000"  wait="true"  storage="chara/6/Mia_.png"  width="403"  height="652"  left="880"  top="120"  reflect="false"  ]
+[chara_show  name="Криста"  time="1000"  wait="true"  storage="chara/1/Krista_.png"  width="447"  height="729"  left="-60"  top="120"  reflect="true"  ]
+[tb_start_text mode=1 ]
+Мия умела работать с материалом, и вместе мы довольно быстро нашли всё нужное. [p]
+Пока я дописывала свои заметки, Мия принесла нам чай с печеньем.[p]
+#Мия:
+Знаешь, Криста... Мы вроде учимся вместе, сидим за одной партой, а почти и не знаем друг друга... [p]
+Какие предметы ты любишь? Чем ты занимаешься после школы? [p]
+Я бы хотела узнать тебя получше...[p]
+#
+Оторвавшись от записей, я взяла чашку и взглянула на Мию.[p]
+Действительно, за предыдущие годы у нас даже не возникала мысль общаться вне уроков.[p]
+#
+[_tb_end_text]
+
+[tb_start_text mode=4 ]
+Я задумалась: а хотела бы я узнать Мию получше?
+[_tb_end_text]
+
+[glink  color="btn_22_lime"  storage="Project.ks"  size="20"  text="Конечно!"  x="500"  y="320"  width="300"  height="25"  _clickable_img=""  target="*KnowMia_Yes"  glink_sm="true"  ]
+[glink  color="btn_22_white"  storage="Project.ks"  size="20"  text="И&nbsp;так&nbsp;достаточно"  x="500"  y="412"  width="300"  height="25"  _clickable_img=""  target="*KnowMia_No"  glink_sm="true"  ]
+[s  ]
+*KnowMia_No
+
+[tb_start_text mode=1 ]
+#Криста:
+Я не уверена, что хочу общаться о чём-то кроме уроков.[p]
+Извини, но мне кажется этого достаточно.[p]
+#
+Уголки губ Мии опустились.[p]
+#Мия:
+Оу...  Ну, ладно... Нет, так нет.[p]
+#
+Мы допили чай в неуютной тишине и, собрав вещи, я поехала домой.[p]
+#
+
 [_tb_end_text]
 
 [chara_hide_all  time="1000"  wait="true"  ]
 [bg  time="1000"  method="crossfade"  storage="black.jpg"  ]
 [tb_start_text mode=1 ]
-#
-Я вернулась домой и долго не могла найти себе места, понимая, что упустила что-то важное.[p]
+Завтра, к счастью, была суббота. А значит, можно было лечь попозже, не боясь не выспаться к школе.[p]
 [_tb_end_text]
 
-[if  exp="f.MiaLive"  comparisonOperation="!="  value="1"  ]
+[tb_hide_message_window  ]
+[jump  storage="Cafe.ks"  target=""  ]
+*KnowMia_Yes
+
+[tb_eval  exp="f.Mia+=1"  name="Mia"  cmd="+="  op="t"  val="1"  ]
 [tb_start_text mode=1 ]
-В конце учебного года школу потрясла страшная новость: [p]
-около десятка учеников попали в больницу с отравлением или передозировкой ZИ.[p]
-Больше половины из них не смогли спасти.[p]
-В их числе была и Мия.[p]
-[_tb_end_text]
-
-[tb_ptext_show  x="410"  y="350"  size="30"  color="0xd12a35"  time="1000"  face="Georgia"  name="MiasDeath"  text="Достижение:&nbsp;Смерть&nbsp;Мии"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="419.99998474121094"  y="399.99999237060547"  size="30"  color="0xe63541"  time="1000"  name="MiasDeathText"  text="Вы&nbsp;не&nbsp;смогли&nbsp;спасти&nbsp;Мию"  face="Georgia"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[endif  ]
-[endif  ]
-[jump  storage="Final.ks"  target="*TheEnd"  ]
-[endif  ]
-[tb_start_text mode=1 ]
-#Джо:
-Кто ты такая, чтобы судить, что правильно, а что нет?[p]
+Мия просияла.[p]
+#Мия:
+Здорово! Может тогда сходим в кафе завтра? На Чарринг Роуд открылось новое, говорят, там обалденные корзиночки с ягодами![p]
 #
-Я замешкалась, не зная, злиться или смущаться. [p]
-Вместо ответа, я потянулась сделать глоток чая.[p]
-[_tb_end_text]
-
-[bg  time="1000"  method="crossfade"  storage="CupOfTea.webp"  ]
-[if  exp="f.Nick"  comparisonOperation=">"  value="5"  ]
-[tb_start_text mode=1 ]
-#Ник:
-Криста, не пей![p]
-[_tb_end_text]
-
-[tb_start_text mode=1 ]
-#
-Услышав громкий крик Ника, я повернулась, убирая чашку от губ.[p]
-[_tb_end_text]
-
-[bg  time="1000"  method="crossfade"  storage="cafe1.webp"  ]
-[chara_show  name="Nick"  time="1000"  wait="true"  storage="chara/5/Nick_full.png"  width="414"  height="589"  left="409"  top="130"  reflect="true"  ]
-[tb_start_text mode=1 ]
-#
-Ник, запыхавшись, подбежал к нашему столику, зло глядя на Джо. [p]
-Тот в свою очередь встретил взгляд Ника с таким же гневом.[p]
-#Джо:
-Какого чёрта ты тут забыл? Не видишь, мы разговариваем.[p]
-#Ник:
-Ты что-то подсыпал в чашку Кристы.[p]
-#Джо:
-А ты не охренел?![p]
-#
-Я вгляделась в свой чай.[p]
-#Криста:
-Ты уверен, Ник? Откуда ты знаешь?[p]
-#Ник:
-Проходил мимо и увидел в окно, как этот придурок сыпет какую-то зелёную дрянь в чашку, а потом отдаёт её тебе. [p]
-#
-Я внимательнее всмотрелась в жидкость в чашке, потом осторожно понюхала.[p]
-Ничего особенного я не заметила, но и причин не доверять Нику у меня не было.[p]
 
 [_tb_end_text]
 
-[tb_start_text mode=1 ]
-Ник и Джо буравили друг друга недобрыми взглядами, пока Ник не нарушил молчание.[p]
-#Ник:
-Что это за гадость? Признаешься сам или мне вызвать полицию?[p]
-#Джо:
-Ты совсем рехнулся? Какая к чертям полиция?[p]
-#
-Несмотря на уверенный голос, было видно, что Джо нервничает. И это настораживало.[p]
-Окинув взглядом кафе и очевидно сообразив, что скандал будет не в его пользу, Джо понизил голос и обратился ко мне.[p]
-#Джо:
-Ты просто была такая нервная, я хотел, чтобы ты успокоилась, расслабилась...[p]
-#Криста:
-Ты подсыпал мне в чай успокоительное?[p]
-#Джо:
-Я подсыпал тебе зи.[p]
-#
-Ник вскочил, хватая Джо за воротник футболки. [p]
-#Ник:
-ТЫ В СВОЁМ УМЕ?![p]
-#Джо:
-Эй-эй, убери от меня этого психованного...[p]
-#Ник:
-Зи — наркотик, дебил! Какого чёрта ты вытворяешь?[p]
-
+[tb_start_text mode=4 ]
+Задумавшись ненадолго, я ответила:
 [_tb_end_text]
 
-[tb_ptext_show  x="409.99998474121094"  y="289.99998474121094"  size="30"  color="0xffffff"  time="1000"  face="Georgia"  name="NickWay"  text="Достижение:&nbsp;Вместе&nbsp;мы&nbsp;сила!"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="150.00001525878906"  y="450.0000228881836"  size="30"  color="0xffffff"  time="1000"  name="NickPointsEnought"  text="Вы&nbsp;набрали&nbsp;достаточно&nbsp;баллов&nbsp;отношений&nbsp;с&nbsp;Ником,&nbsp;чтобы&nbsp;он&nbsp;помог&nbsp;Вам"  face="Georgia"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[tb_start_text mode=1 ]
-На шум прибежал хозяин кафе.[p]
-А когда Ник рассказал о подсыпанном в чашку наркотике, он всё-таки вызвал полицию.[p]
-На следующий день экспертиза подтвердила наличие ZИ в чае и Джо арестовали. [p]
-Теперь в нашей школе стало безопаснее.[p]
-Мия вернулась к учебе через несколько дней, и я смущённо попросила её пересесть за другую парту.[p]
-Видя, как мы с Ником смотрим друг на друга, она согласилась без лишних вопросов, лишь проводила нас хитрой улыбкой.[p]
-Правда прошло ещё две недели, прежде чем Ник предложил мне встречать, но лучше поздно, чем никогда.[p]
-[_tb_end_text]
+[glink  color="btn_22_lime"  storage="Project.ks"  size="20"  text="Давай!"  x="500"  y="320"  width="300"  height="25"  _clickable_img=""  target="*CafeWithMia"  glink_sm="true"  ]
+[glink  color="btn_22_white"  storage="Project.ks"  size="20"  text="Может&nbsp;в&nbsp;другой&nbsp;раз..."  x="500"  y="412"  width="300"  height="25"  _clickable_img=""  target="*RejectCafeWithMia"  glink_sm="true"  ]
+[s  ]
+*RejectCafeWithMia
 
-[elsif  exp="f.Mia"  comparisonOperation=">"  value="5"  ]
-[tb_start_text mode=1 ]
-#
-Сделав пару глотков, я остановилась.[p]
-Чай имел непривычный привкус. [p]
-Сидящий напротив Джо пристально смотрел на меня.[p]
-#Криста:
-Что?[p]
-#Джо:
-Ты хорошо себя чувствуешь? Ты как-то побледнела.[p]
-#
-Я отрицательно мотнула головой, как вдруг поняла, что вслед за моим взглядом мир начал расплываться...[p]
-[_tb_end_text]
-
-[chara_hide_all  time="1000"  wait="true"  ]
-[bg  time="1000"  method="fadeIn"  storage="black.jpg"  ]
-[wait  time="3000"  ]
-[bg  time="1000"  method="fadeIn"  storage="palata.jpg"  ]
-[chara_show  name="Mia"  time="1000"  wait="true"  storage="chara/6/Mia_.png"  width="379"  height="618"  left="900"  top="130"  reflect="false"  ]
-[chara_show  name="Криста"  time="1000"  wait="true"  storage="chara/1/Krista_.png"  width="404"  height="657"  left="-50"  top="140"  reflect="true"  ]
 [tb_start_text mode=1 ]
 #Мия:
-Привет, соня![p]
+Конечно... в другой раз...[p]
 #
-Я открыла глаза и с удивлением огляделась. Больничная палата была точной копией той, где лежала Мия несколько дней назад.[p]
-Вот только теперь мы поменялись местами.[p]
-#Криста:
-Что произошло? Почему я здесь?[p]
-[_tb_end_text]
-
-[tb_ptext_show  x="419.99998474121094"  y="209.99999237060547"  size="30"  color="0xffffff"  time="1000"  face="Georgia"  name="MiaWay"  text="Достижение:&nbsp;Женская&nbsp;дружба"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="100.00001525878906"  y="430.0000228881836"  size="30"  color="0xffffff"  time="1000"  name="MiaPointsEnought"  text="Вы&nbsp;набрали&nbsp;достаточно&nbsp;баллов&nbsp;отношений&nbsp;с&nbsp;Мией,&nbsp;чтобы&nbsp;она&nbsp;помогла&nbsp;Вам"  face="Georgia"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[else  ]
-[tb_start_text mode=1 ]
+Улыбка Мии померкла, но уже через несколько мгновений вернулась снова.[p]
+Мы пили чай, хрустели печеньем, болтали обо всякой ерунде. [p]
+Время пролетело незаметно.[p]
+Домой я вернулась уже затемно. Пройдя в свою комнату, я плюхнулась на кровать и взяла недочитанную книгу.[p]
+К счастью завтра была суббота, а значит можно было не волноваться о том, чтобы не выспаться к школе.[p]
 #
-Сделав пару глотков, я остановилась.[p]
-Чай имел непривычный привкус. [p]
-Сидящий напротив Джо пристально смотрел на меня.[p]
-#Криста:
-Что?[p]
-#Джо:
-Ты хорошо себя чувствуешь? Ты как-то побледнела.[p]
-#
-Я отрицательно мотнула головой, как вдруг поняла, что вслед за моим взглядом мир начал расплываться...[p]
-[_tb_end_text]
-
-[chara_hide_all  time="1000"  wait="true"  ]
-[bg  time="1000"  method="fadeIn"  storage="black.jpg"  ]
-[wait  time="3000"  ]
-[tb_start_text mode=1 ]
-#
-Я пришла в себя в больничной палате в окружении полиции. [p]
-Оказалось, у меня отравление ZИ, и вдобавок пакетик этой гадости нашли в моём рюкзаке.[p]
-Как я ни пыталась объяснить, что добровольно ничего не принимала и уж точно не покупала эту дрянь, без доказательств мне никто не верил.[p]
-Со мной провели множество воспитательных бесед, после чего до сентября отстранили от учёбы и отправили под домашний арест.[p]
-Пропустив итоговые экзамены, я вынуждена была остаться на второй год. [p]
-[_tb_end_text]
-
-[tb_ptext_show  x="409.99998474121094"  y="259.99999237060547"  size="30"  color="0xffffff"  time="1000"  face="Georgia"  name="Fail"  text="Достижение:&nbsp;Это&nbsp;подстава!"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="120.00001525878906"  y="440.0000228881836"  size="30"  color="0xffffff"  time="1000"  name="FailText"  text="Вы&nbsp;не&nbsp;набрали&nbsp;достаточно&nbsp;баллов&nbsp;отношений&nbsp;ни&nbsp;с&nbsp;кем&nbsp;из&nbsp;персонажей.&nbsp;"  face="Georgia"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[if  exp="f.MiaLive"  comparisonOperation="!="  value="1"  ]
-[tb_start_text mode=1 ]
-В конце учебного года школу потрясла страшная новость: [p]
-около десятка учеников попали в больницу с отравлением или передозировкой зи.[p]
-Больше половины из них не смогли спасти.[p]
-В их числе была и Мия.[p]
-[_tb_end_text]
-
-[tb_ptext_show  x="410"  y="350"  size="30"  color="0xe03641"  time="1000"  face="Georgia"  name="MiasDeath"  text="Достижение:&nbsp;Смерть&nbsp;Мии"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="409.99998474121094"  y="419.99999237060547"  size="30"  color="0xe3202d"  time="1000"  name="MiasDeathText"  text="Вы&nbsp;не&nbsp;смогли&nbsp;спасти&nbsp;Мию"  face="serif"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[endif  ]
-[endif  ]
-[endif  ]
-*TheEnd
-
-[cm  ]
-[tb_hide_message_window  ]
-[chara_hide_all  time="1000"  wait="true"  ]
-[bg  time="1000"  method="crossfade"  storage="black.jpg"  ]
-[tb_ptext_show  x="339.99998474121094"  y="259.99999237060547"  size="30"  color="0xffffff"  time="1000"  text="Поздравляем&nbsp;с&nbsp;завершением&nbsp;истории!"  name="End"  anim="false"  face="Georgia"  edge="undefined"  shadow="undefined"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="1000"  ]
-[tb_show_message_window  ]
-[tb_start_text mode=1 ]
-Сценарий и разработка:[p]
-Aienna[p]
-Вдохновлено: [p]
-играми Нэнси Дрю[p]
-Персонажи:[p]
-сгенерированы в бесплатном приложении Dream By WOMBO[p]
-Удаление белого фона с изображения персонажей:[p]
-Medaris[p]
-Фоны:[p]
-Скачаны с ресурса "Sotni - Идеи для вдохновения"[p]
-Спасибо:[p]
-Всем за внимание![p]
-
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[jump  storage="Cafe.ks"  target=""  ]
+*CafeWithMia
+
+[tb_eval  exp="f.Mia+=1"  name="Mia"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.Mia_Cafe=1"  name="Mia_Cafe"  cmd="="  op="t"  val="1"  val_2="undefined"  ]
+[tb_start_text mode=1 ]
+#Мия:
+Как здорово![p]
+#
+Мия чуть не запрыгала от радости, а я рассмеялась её непосредственности.[p]
+Мы договорились встретиться у кафе в три часа и, собрав вещи, я поехала домой. [p]
+#
+[_tb_end_text]
+
+[tb_hide_message_window  ]
+[jump  storage="Cafe.ks"  target=""  ]

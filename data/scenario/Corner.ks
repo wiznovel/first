@@ -2,10 +2,6 @@
 
 [cm  ]
 [tb_hide_message_window  ]
-[uiVariable  uiNameDiv="_var"  color="0x000000"  fontColor="0xffffff"  fontSize="22"  uiNameVar="f.Clue"  uiName="Дедукция"  x="590"  y="80"  left="590"  top="80"  width=""  height=""  ]
-[uiVariable  uiNameDiv="_varJ"  color="0x000000"  fontColor="0xe9f50a"  fontSize="22"  uiNameVar="f.Joeh"  uiName="Джо"  x="450"  y="10"  left="450"  top="10"  width=""  height=""  ]
-[uiVariable  uiNameDiv="_varN"  color="0x000000"  fontColor="0x3de6f5"  fontSize="22"  uiNameVar="f.Nick"  x="590"  y="10"  left="590"  top="10"  width=""  height=""  uiName="Ник"  ]
-[uiVariable  uiNameDiv="_varM"  color="0x000000"  fontColor="0x3cf536"  fontSize="22"  uiNameVar="f.Mia"  x="739"  y="10"  left="739"  top="10"  width=""  height=""  uiName="Мия"  ]
 [chara_hide_all  time="1000"  wait="true"  ]
 [bg  time="1000"  method="crossfade"  storage="outside.webp"  ]
 [tb_show_message_window  ]
