@@ -1,4 +1,3 @@
-[_tb_system_call storage=system/_Hospital.ks]
 
 [tb_hide_message_window  ]
 [chara_hide_all  time="1000"  wait="true"  ]

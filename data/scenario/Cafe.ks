@@ -1,4 +1,3 @@
-[_tb_system_call storage=system/_Cafe.ks]
 
 [cm  ]
 [tb_hide_message_window  ]
