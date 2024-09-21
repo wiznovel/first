@@ -1,4 +1,4 @@
-[_tb_system_call storage=system/_scene1.ks]
+[_tb_system_call storage=data/scenario/system/_scene1.ks]
 
 [cm  ]
 [tb_eval  exp="f.Clue=0"  name="Clue"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
